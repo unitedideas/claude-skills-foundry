@@ -1,7 +1,8 @@
 # Claude Skills: Foundry
 
-[![NHS Agentic Readiness](https://nothumansearch.ai/badge/github.com/unitedideas/claude-skills-foundry)](https://nothumansearch.ai)
-[![AI Dev Jobs](https://img.shields.io/endpoint?url=https://aidevboard.com/api/v1/badge)](https://aidevboard.com)
+[![NHS Agentic Score — aidevboard.com](https://nothumansearch.ai/badge/aidevboard.com.svg)](https://nothumansearch.ai/site/aidevboard.com)
+[![AI Dev Jobs — Hiring](https://aidevboard.com/badge/hiring.svg)](https://aidevboard.com)
+[![AI Dev Jobs — Jobs count](https://aidevboard.com/badge/jobs-count.svg)](https://aidevboard.com)
 
 Three installable [Claude Skills](https://code.claude.com/docs/en/skills) that wrap the Foundry's MCP-native products. Drop the `.claude/skills/*/SKILL.md` files into your Claude Code install and your agent picks them up automatically, or invoke them manually with `/find-mcp-servers`, `/find-ai-jobs`, or `/cite-enterprise-ai-research`.
 
