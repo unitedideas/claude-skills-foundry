@@ -1,0 +1,34 @@
+name: Skill request
+description: Propose a new Claude Code skill for this repo.
+title: "[skill] "
+labels: ["skill-request"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What workflow should this skill automate?
+    validations:
+      required: true
+  - type: textarea
+    id: triggers
+    attributes:
+      label: Trigger phrases
+      description: What should the user type/say to invoke this skill?
+      placeholder: |
+        - "deploy to staging"
+        - "run smoke tests"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Why does this belong as a skill
+      description: Why is this better as a skill than as a one-off prompt or command?
+    validations:
+      required: true
+  - type: textarea
+    id: sketch
+    attributes:
+      label: Rough sketch (optional)
+      description: Steps the skill would run, tools it would call, inputs/outputs.

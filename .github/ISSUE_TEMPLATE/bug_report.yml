@@ -1,0 +1,36 @@
+name: Bug report
+description: A skill in this repo misbehaves or fails to trigger correctly.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: One or two sentences describing the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Which skill, which prompt, which Claude Code version.
+      placeholder: |
+        1. Run Claude Code with skill X installed
+        2. Prompt: "..."
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Include Claude Code transcript or error output.
+    validations:
+      required: true
