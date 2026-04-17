@@ -1,29 +1,28 @@
 name: NHS Agentic Readiness Score
 
 on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
   schedule:
-    - cron: "0 14 * * 1"  # Mondays 14:00 UTC
+    - cron: "0 14 * * 1"  # Mondays 14:00 UTC — weekly drift check
   workflow_dispatch:
 
 jobs:
   score:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Score README URLs via Not Human Search
+      - name: Score nothumansearch.ai (reference site)
         uses: unitedideas/nhs-score-check-action@v1
         with:
-          file: README.md
-          min-score: 70
-          fail-below: false
+          domain: nothumansearch.ai
+          min-score: 85
 
-      - name: Report
-        if: always()
-        run: |
-          echo "NHS agentic-readiness score check complete."
-          echo "Details: https://nothumansearch.ai"
+      - name: Score aidevboard.com
+        uses: unitedideas/nhs-score-check-action@v1
+        with:
+          domain: aidevboard.com
+          min-score: 85
+
+      - name: Score 8bitconcepts.com
+        uses: unitedideas/nhs-score-check-action@v1
+        with:
+          domain: 8bitconcepts.com
+          min-score: 85
