@@ -1,0 +1,29 @@
+name: NHS Agentic Readiness Score
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "0 14 * * 1"  # Mondays 14:00 UTC
+  workflow_dispatch:
+
+jobs:
+  score:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Score README URLs via Not Human Search
+        uses: unitedideas/nhs-score-check-action@v1
+        with:
+          file: README.md
+          min-score: 70
+          fail-below: false
+
+      - name: Report
+        if: always()
+        run: |
+          echo "NHS agentic-readiness score check complete."
+          echo "Details: https://nothumansearch.ai"
