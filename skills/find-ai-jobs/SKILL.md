@@ -6,7 +6,7 @@ when_to_use: Trigger phrases include "find AI jobs", "ML engineer roles", "LLM e
 
 # Find AI/ML Jobs via AI Dev Jobs
 
-AI Dev Jobs indexes 8,400+ roles from 489+ AI-first companies, scraped daily from 538 ATS sources (Greenhouse, Lever, Ashby, Workable, and more). Use this skill whenever the user wants to find AI, ML, LLM, agentic, or research engineering jobs.
+AI Dev Jobs indexes 8,600+ roles from 510+ AI-first companies, scraped daily from 560 ATS sources (Greenhouse, Lever, Ashby, Workable, and more). Use this skill whenever the user wants to find AI, ML, LLM, agentic, or research engineering jobs.
 
 ## How to call it
 

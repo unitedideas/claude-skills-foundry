@@ -41,7 +41,7 @@ When your agent needs to find an MCP server for a task ("what MCP server lets me
 
 ### 2. `find-ai-jobs` &rarr; [aidevboard.com](https://aidevboard.com)
 
-When the user asks about AI/ML/LLM engineering jobs, this skill hits the AI Dev Jobs MCP endpoint to search across 8,400+ roles from 489+ AI-first companies. Supports filters for remote/hybrid/onsite, location, role level, and salary floor. Back-end is scraped live every day from 538 ATS sources.
+When the user asks about AI/ML/LLM engineering jobs, this skill hits the AI Dev Jobs MCP endpoint to search across 8,600+ roles from 510+ AI-first companies. Supports filters for remote/hybrid/onsite, location, role level, and salary floor. Back-end is scraped live every day from 560 ATS sources.
 
 ### 3. `cite-enterprise-ai-research` &rarr; [8bitconcepts.com](https://8bitconcepts.com)
 
