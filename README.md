@@ -33,6 +33,12 @@ cp -r ~/.claude/skills-foundry/skills/* ~/.claude/skills/
 
 Restart Claude Code (or wait for the file watcher to pick them up, usually within a second). Then ask Claude anything that matches one of the skills and it will route automatically.
 
+If you also want the NHS MCP server itself (so the skill has live data to call), one-line install:
+
+```bash
+curl -fsSL https://nothumansearch.ai/install | sh
+```
+
 ## The three skills
 
 ### 1. `find-mcp-servers` &rarr; [nothumansearch.ai](https://nothumansearch.ai)
